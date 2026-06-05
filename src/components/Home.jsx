@@ -3,7 +3,7 @@ import Hero from './Hero/Hero.jsx';
 import Services from './Services/Services.jsx';
 import About from './About/About.jsx';
 import Work from './Work/Work.jsx';
-import Experience from './Experience.jsx';
+import Experience from './Experience/Experience.jsx';
 import Skills from './Skills.jsx';
 import Testimonials from './Testimonials.jsx';
 import Blog from './Blog.jsx';
