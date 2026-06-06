@@ -4,7 +4,7 @@ import Services from './Services/Services.jsx';
 import About from './About/About.jsx';
 import Work from './Work/Work.jsx';
 import Experience from './Experience/Experience.jsx';
-import Skills from './Skills.jsx';
+import Skills from './skills/Skills.jsx';
 import Testimonials from './Testimonials.jsx';
 import Blog from './Blog.jsx';
 import Contact from './Contact.jsx';
