@@ -1,5 +1,5 @@
 import Lottie from "lottie-react";
-import loaderAnimation from "../../../public/assets/loader.json";
+import loaderAnimation from "../../assets/loader.json";
 
 export default function Loader() {
   return (
@@ -7,10 +7,7 @@ export default function Loader() {
       <Lottie
         animationData={loaderAnimation}
         loop={true}
-        style={{
-          width: 250,
-          height: 250,
-        }}
+        className="loader-animation"
       />
     </div>
   );
