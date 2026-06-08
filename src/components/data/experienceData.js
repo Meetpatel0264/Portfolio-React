@@ -6,25 +6,25 @@ export const experienceData = {
     items: [
       {
         year: "2025 - Present",
-        title: "Bootstrap Course",
+        title: "NodeJS",
         institute: "RNW Multimedia, Surat",
       },
 
       {
         year: "2025 - Present",
-        title: "Media Query Course",
+        title: "React JS",
         institute: "RNW Multimedia, Surat",
       },
 
       {
         year: "2025 - Present",
-        title: "CSS Course",
+        title: "CSS",
         institute: "RNW Multimedia, Surat",
       },
 
       {
         year: "2025 - Present",
-        title: "HTML Course",
+        title: "HTML",
         institute: "RNW Multimedia, Surat",
       },
     ],
@@ -42,7 +42,7 @@ export const experienceData = {
       },
 
       {
-        year: "2022 - 2024",
+        year: "2021 - 2024",
         title: "HNGU University",
         institute: "University, HNGU",
       },

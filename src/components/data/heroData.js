@@ -9,6 +9,5 @@ export const heroData = {
     "Developer",
     "Programmer",
     "Coder",
-    "MERN Developer",
   ],
 };

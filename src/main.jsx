@@ -6,6 +6,7 @@ import "swiper/css";
 import "remixicon/fonts/remixicon.css";
 import { BrowserRouter } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
+import "@fontsource/sora";
 
 import App from "./App";
 
