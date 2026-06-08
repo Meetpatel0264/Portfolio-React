@@ -5,7 +5,7 @@ import About from './About/About.jsx';
 import Work from './Work/Work.jsx';
 import Experience from './Experience/Experience.jsx';
 import Skills from './Skills/Skills.jsx';
-import Testimonials from './Testimonials.jsx';
+import Testimonials from './Testimonials/Testimonials.jsx';
 import Blog from './Blog.jsx';
 import Contact from './Contact.jsx';
 import Footer from './Footer.jsx';

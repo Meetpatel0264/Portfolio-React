@@ -1,15 +1,13 @@
 export const aboutData = {
   image: "/assets/images/about-img.png",
-
-  title: "Who I Am – Meet Patel",
-
+  title: "Who I Am –",
+  name: "Meet Patel",
   subtitle: "About Me",
-
   description:
-    "Currently, I am pursuing a Full Stack Web Development course at Red & White Multimedia Education.",
+    "Hello! I'm Meet Patel, an aspiring Full Stack Web Developer with a passion for creating modern, responsive, and interactive web applications. I enjoy transforming ideas into real-world digital solutions while continuously improving my technical and problem-solving skills. Currently, I am enhancing my expertise through practical projects and hands-on learning at Red & White Multimedia Education.",
 
   quote:
-    "Helping businesses grow with creative web design and development solutions.",
+    "Building clean, responsive, and meaningful web experiences that make a difference.",
 
   resume: "/assets/Meet-Resume.pdf",
 

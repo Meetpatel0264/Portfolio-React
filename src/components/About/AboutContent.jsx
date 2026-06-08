@@ -17,7 +17,10 @@ export default function AboutContent() {
         </p>
 
         <h2 className="mb-4">
-          {aboutData.title}
+          {aboutData.title}{" "}
+          <span style={{ color: "#8750f7" }}>
+            {aboutData.name}
+          </span>
         </h2>
 
         <p className="fs-5 lh-base">
