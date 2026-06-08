@@ -6,10 +6,9 @@ import Work from './Work/Work.jsx';
 import Experience from './Experience/Experience.jsx';
 import Skills from './Skills/Skills.jsx';
 import Testimonials from './Testimonials/Testimonials.jsx';
-import Blog from './Blog.jsx';
-import Contact from './Contact.jsx';
-import Footer from './Footer.jsx';
-
+import Blog from './Blog/Blog.jsx';
+import Contact from './Contact/Contact.jsx';
+import Footer from "./Footer/Footer.jsx";
 export default function Home() {
   return (
     <>

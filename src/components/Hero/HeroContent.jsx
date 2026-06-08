@@ -7,7 +7,7 @@ export default function HeroContent() {
   return (
     <div className="profile">
       <h3 className="hero-sub-title">
-        I am {heroData.name}
+        I am <span className="title-colour">{heroData.name}</span>
       </h3>
 
       <span className="hero-title">

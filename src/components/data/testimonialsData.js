@@ -4,7 +4,7 @@ export const testimonialsData = [
     name: "Maan Patel",
     image: "/assets/images/Testimonial-1.jpg",
     review:
-      "Meet Patel’s design work is outstanding. His creativity and attention to detail helped bring our vision to life.",
+      "Meet Patel consistently delivers high-quality web solutions with great attention to detail. His dedication, creativity, and problem-solving skills make him a reliable developer for any project.",
   },
 
   {
@@ -12,7 +12,7 @@ export const testimonialsData = [
     name: "Anant Shah",
     image: "/assets/images/Testimonial-2.png",
     review:
-      "Meet Patel is a brilliant content writer. His ability to understand our brand and produce engaging content is unmatched.",
+      "Working with Meet was a fantastic experience. He understood our requirements quickly and transformed ideas into a modern, responsive, and user-friendly website.",
   },
 
   {
@@ -20,15 +20,15 @@ export const testimonialsData = [
     name: "Keyur Gohil",
     image: "/assets/images/Testimonial-3.png",
     review:
-      "Meet Patel is an outstanding web developer. His technical skills and attention to detail consistently deliver high-quality results.",
+      "Meet Patel has a strong command of frontend development and UI design. His ability to create clean, responsive, and engaging interfaces is truly impressive.",
   },
 
   {
     id: 4,
-    name: "Hites Desai",
+    name: "Hitesh Desai",
     image: "/assets/images/Testimonial-4.jpg",
     review:
-      "Meet Patel’s creativity and design skills are unparalleled. He helped elevate our brand with eye-catching visuals.",
+      "Meet is passionate about web development and always strives for excellence. His technical expertise, communication skills, and commitment to deadlines set him apart.",
   },
 
   {
@@ -36,6 +36,6 @@ export const testimonialsData = [
     name: "Hasmukh Rafaliya",
     image: "/assets/images/Testimonial-5.jpg",
     review:
-      "Working with Meet Patel has been an amazing experience. His dedication and communication make him an invaluable asset.",
+      "I highly recommend Meet Patel for web development projects. He is professional, detail-oriented, and dedicated to delivering results that exceed expectations.",
   },
 ];

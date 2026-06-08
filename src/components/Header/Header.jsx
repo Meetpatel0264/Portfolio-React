@@ -6,7 +6,7 @@ import MobileMenu from "./MobileMenu";
 export default function Header() {
   return (
     <>
-      <header className="header-bg position-sticky">
+      <header className="header-bg position-sticky py-1">
         <div className="container">
           <div className="header d-flex justify-content-between align-items-center">
 

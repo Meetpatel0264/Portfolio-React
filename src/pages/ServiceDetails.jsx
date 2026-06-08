@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 
 import Header from "../components/Header/Header";
-import Footer from "../components/Footer";
+import Footer from "../components/Footer/Footer";
 
 import ServiceBanner from "../components/Services/ServiceBanner";
 import ServiceContent from "../components/Services/ServiceContent";
