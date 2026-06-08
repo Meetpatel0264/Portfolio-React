@@ -1060,3 +1060,54 @@ textarea {
 .hello {
     text-decoration: none !important;
 }
+
+
+
+
+
+
+
+
+
+.loader-wrapper {
+    position: fixed;
+    inset: 0;
+    background: #050709;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
+}
+
+.loader-content {
+    text-align: center;
+}
+
+.loader-animation {
+    width: 220px;
+    height: 220px;
+    margin: 0 auto;
+}
+
+.loader-title {
+    margin-top: -10px;
+    font-size: 32px;
+    font-weight: 700;
+
+    background: linear-gradient(
+        90deg,
+        #8750f7,
+        #ffffff
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.loader-subtitle {
+    color: #dddddd;
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin-top: 10px;
+}
