@@ -270,6 +270,10 @@ header {
     font-weight: 700;
 }
 
+.title-colour{
+    color: var(--border-hover-light);
+}
+
 /************************ Hero Section-1 End ************************/
 
 /************************ Services Section-2 Start ************************/
@@ -833,7 +837,26 @@ header {
     border-radius: 50%;
     padding: 15px;
     font-size: 20px;
+}
 
+.info-form::placeholder {
+    color: #999;
+}
+
+.info-form:focus {
+    background: transparent;
+    border: 2px solid #8750f7 !important;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(135, 80, 247, 0.15);
+}
+
+select.info-form:focus {
+    border: 2px solid #8750f7 !important;
+    background-color: #050709   ;
+}
+
+textarea.info-form:focus {
+    border: 2px solid #8750f7 !important;
 }
 
 /************************ Contact Section-8 End ************************/
