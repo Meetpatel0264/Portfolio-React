@@ -21,11 +21,11 @@ export default function ContactForm() {
     const result = await response.json();
 
     if (result.success) {
-      alert("✅ Message Sent Successfully!");
+      alert("Message Sent Successfully!");
 
       formRef.current.reset();
     } else {
-      alert("❌ Failed to send message!");
+      alert("Failed to send message!");
     }
   };
 
