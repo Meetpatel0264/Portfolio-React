@@ -1,9 +1,32 @@
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 import ContactHeader from "./ContactHeader";
 import { serviceOptions } from "../data/contactData";
 
 export default function ContactForm() {
- 
+  const formRef = useRef();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        formRef.current,
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+      )
+      .then(() => {
+        alert("✅ Message Sent Successfully!");
+        formRef.current.reset();
+      })
+      .catch((error) => {
+        console.log(error);
+        alert("❌ Failed to send message!");
+      });
+  };
+
   return (
     <div className="form p-sm-5 text-center">
 
@@ -13,24 +36,6 @@ export default function ContactForm() {
         ref={formRef}
         onSubmit={handleSubmit}
       >
-        <input
-          type="hidden"
-          name="access_key"
-          value="12a0a0db-ac30-4bed-9699-b6f2bced9a8f"
-        />
-
-        <input
-          type="hidden"
-          name="subject"
-          value="New Portfolio Contact Form Submission"
-        />
-
-        <input
-          type="hidden"
-          name="from_name"
-          value="Meet Patel Portfolio"
-        />
-
         <div className="row gy-4">
 
           <div className="col-lg-6">
@@ -110,7 +115,6 @@ export default function ContactForm() {
           </div>
 
         </div>
-
       </form>
     </div>
   );

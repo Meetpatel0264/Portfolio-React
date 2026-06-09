@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@fontsource/sora": "^5.2.8",
     "@vitejs/plugin-react": "4.3.4",
     "bootstrap": "^5.3.8",
