@@ -1,34 +1,9 @@
-import { useRef } from "react";
+
 import ContactHeader from "./ContactHeader";
 import { serviceOptions } from "../data/contactData";
 
 export default function ContactForm() {
-  const formRef = useRef();
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-
-    const formData = new FormData(formRef.current);
-
-    const response = await fetch(
-      "https://api.web3forms.com/submit",
-      {
-        method: "POST",
-        body: formData,
-      }
-    );
-
-    const result = await response.json();
-
-    if (result.success) {
-      alert("Message Sent Successfully!");
-
-      formRef.current.reset();
-    } else {
-      alert("Failed to send message!");
-    }
-  };
-
+ 
   return (
     <div className="form p-sm-5 text-center">
 
