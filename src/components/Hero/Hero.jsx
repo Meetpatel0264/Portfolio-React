@@ -4,14 +4,13 @@ import Stats from "./Stats";
 
 export default function Hero() {
   return (
+
     <section
-      className="bg-gradiant py-100"
+      className="bg-gradiant py-100 hero-section"
       id="resume"
     >
-      <div className="container">
-
+      <div className="container hero-content">
         <div className="row row-gap-5">
-
           <div className="col-lg-6">
             <HeroContent />
           </div>
@@ -19,11 +18,9 @@ export default function Hero() {
           <div className="col-lg-6 text-center">
             <HeroImage />
           </div>
-
         </div>
 
         <Stats />
-
       </div>
     </section>
   );
