@@ -6,7 +6,7 @@ import { footerData } from "../data/footerData";
 
 export default function Footer() {
   return (
-    <footer className="bg-gradiant pt-5">
+    <footer className="bg-black pt-5">
 
       <div className="container">
 

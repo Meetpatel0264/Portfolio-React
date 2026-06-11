@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Loader from "./components/Loader/Loader";
+import ThemeParticles from "./components/Particles/ThemeParticles";
 
 import Home from "./components/Home";
 import ServiceDetails from "./pages/ServiceDetails";
@@ -23,7 +24,9 @@ export default function App() {
   }
 
   return (
-    <Routes>
+    <>
+      <ThemeParticles />
+      <Routes>
 
       <Route
         path="/"
@@ -40,6 +43,7 @@ export default function App() {
         element={<BlogDetails />}
       />
 
-    </Routes>
+      </Routes>
+    </>
   );
 }
