@@ -46,6 +46,27 @@
 
 .header-bg {
     background-color: var(--header-bg-black);
+    position: sticky;
+    top: 0;
+    z-index: 99999;
+    transition: all 0.4s ease;
+}
+
+.header-scrolled {
+    animation: slideDown 1.2s ease forwards;
+    backdrop-filter: blur(10px);
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 .header-btn {
@@ -1110,3 +1131,133 @@ textarea {
     letter-spacing: 2px;
     margin-top: 10px;
 }
+/************************ Premium Theme Particles Start ************************/
+html,
+body,
+#root {
+    min-height: 100%;
+    background:
+        radial-gradient(circle at top left, rgba(135, 80, 247, 0.16), transparent 32%),
+        radial-gradient(circle at bottom right, rgba(46, 213, 255, 0.08), transparent 26%),
+        var(--header-bg-black);
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.theme-particles-wrap {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    overflow: hidden;
+    background: linear-gradient(135deg, rgba(5, 7, 9, 0.94), rgba(15, 7, 21, 0.91));
+}
+
+.theme-particles-canvas,
+.theme-grid-overlay,
+.theme-glow {
+    position: absolute;
+    inset: 0;
+}
+
+.theme-particles-canvas {
+    width: 100%;
+    height: 100%;
+    opacity: 0.95;
+}
+
+.theme-grid-overlay {
+    background-image:
+        linear-gradient(rgba(135, 80, 247, 0.06) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(135, 80, 247, 0.06) 1px, transparent 1px);
+    background-size: 80px 80px;
+    mask-image: radial-gradient(circle at center, black, transparent 72%);
+    -webkit-mask-image: radial-gradient(circle at center, black, transparent 72%);
+    opacity: 0.55;
+}
+
+.theme-glow {
+    width: 360px;
+    height: 360px;
+    border-radius: 50%;
+    filter: blur(55px);
+    opacity: 0.28;
+    animation: themeFloat 12s ease-in-out infinite alternate;
+}
+
+.theme-glow-one {
+    top: 10%;
+    left: 5%;
+    background: rgba(135, 80, 247, 0.85);
+}
+
+.theme-glow-two {
+    right: 4%;
+    bottom: 8%;
+    background: rgba(46, 213, 255, 0.45);
+    animation-delay: -5s;
+}
+
+header,
+main,
+footer,
+.offcanvas {
+    position: relative;
+    z-index: 2;
+}
+
+section,
+.bg-black,
+.bg-gradiant,
+.header-bg {
+    background-color: transparent !important;
+}
+
+.header-bg,
+header {
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    background: rgba(5, 7, 9, 0.72) !important;
+    border-bottom: 1px solid rgba(135, 80, 247, 0.14);
+}
+
+.card,
+.service-card,
+.experience-card,
+.blog-card,
+.testimonial-card,
+.skill-card,
+.contact-form,
+.contact-info,
+.work-card {
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+}
+
+@keyframes themeFloat {
+    0% {
+        transform: translate3d(0, 0, 0) scale(1);
+    }
+    100% {
+        transform: translate3d(45px, -35px, 0) scale(1.14);
+    }
+}
+
+@media (max-width: 575px) {
+    .theme-particles-canvas {
+        opacity: 0.65;
+    }
+
+    .theme-grid-overlay {
+        background-size: 55px 55px;
+        opacity: 0.38;
+    }
+
+    .theme-glow {
+        width: 230px;
+        height: 230px;
+    }
+}
+/************************ Premium Theme Particles End ************************/
