@@ -15,7 +15,11 @@ export default function WorkCard({
             src={image}
             alt={title}
             className="img-fluid"
-            width="100%"
+            style={{
+              width: "100%",
+              height: "320px",
+              objectFit: "cover",
+            }}
           />
 
           <a

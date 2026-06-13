@@ -34,4 +34,12 @@ export const projectsData = [
     description: "Project was about precision and information",
     link: "https://meetpatel0264.github.io/Chess-Board/",
   },
+  {
+    id: 5,
+    category: "website",
+    title: "Cine Movie",
+    image: "/assets/images/work-2.png",
+    description: "Project was about precision and information",
+    link: "https://exam-movie-react.vercel.app/",
+  },
 ];
